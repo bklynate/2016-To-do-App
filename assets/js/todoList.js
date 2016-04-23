@@ -15,7 +15,7 @@ $("ul").on("click","span",function(event){
 $("input[type='text']").on("keypress", function(event){
   // listens for the keypress of 13
   // which is the value the enter key
-  if(event.which === 13){
+  if(event.which === 13 && $(this).val()!== ""){
     // puts value of user input into todoItem
     var todoItem = $(this).val();
     // create a new li
