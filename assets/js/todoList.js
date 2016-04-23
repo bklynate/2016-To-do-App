@@ -19,7 +19,7 @@ $("input[type='text']").on("keypress", function(event){
     // puts value of user input into todoItem
     var todoItem = $(this).val();
     // create a new li
-    $("ul").append("<li><span>x</span> "+ todoItem +"</li>")
+    $("ul").append("<li><span><i class='fa fa-trash-o' aria-hidden='true'></i></span> "+ todoItem +"</li>")
     $(this).val("")
   }
 })

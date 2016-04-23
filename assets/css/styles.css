@@ -10,6 +10,11 @@
   text-decoration: line-through;
 }
 
+.fa-plus {
+  float: right;
+  padding-top: 5px;
+}
+
 input[type='text']{
   width: 100%;
   margin: 0;
@@ -19,10 +24,21 @@ input[type='text']{
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  color: #2980B9;
+  border: none;
+}
+
+input:focus {
+  background: white;
+  border: 3px solid #2980B9;
+  outline: none;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
+  background: #2BC0E4; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2BC0E4 , #EAECC6); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2BC0E4 , #EAECC6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 h1 {
