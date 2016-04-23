@@ -10,6 +10,17 @@
   text-decoration: line-through;
 }
 
+input[type='text']{
+  width: 100%;
+  margin: 0;
+  padding: 13px 13px 13px 20px;
+  background: #f7f7f7;
+  font-size: 18px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
 }
@@ -33,6 +44,7 @@ li {
   background: white;
   height: 40px;
   line-height: 40px;
+  color: #666;
 }
 
 li:nth-child(2n){
