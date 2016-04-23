@@ -23,3 +23,7 @@ $("input[type='text']").on("keypress", function(event){
     $(this).val("")
   }
 })
+
+$(".fa-plus").click(function(){
+  $("input[type='text']").fadeToggle(200)
+})
