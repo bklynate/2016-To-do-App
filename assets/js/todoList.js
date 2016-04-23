@@ -1,10 +1,10 @@
 // check off specific todos by clicking
-$("li").on("click",function(){
+$("ul").on("click","li",function(){
   $(this).toggleClass("completed")
 });
 
 // click on x to delete todo
-$("span").on("click", function(event){
+$("ul").on("click","span",function(event){
   $(this).parent().fadeOut(500,function(){
     $(this).remove();
   });
@@ -18,5 +18,8 @@ $("input[type='text']").on("keypress", function(event){
   if(event.which === 13){
     // puts value of user input into todoItem
     var todoItem = $(this).val();
+    // create a new li
+    $("ul").append("<li><span>x</span> "+ todoItem +"</li>")
+    $(this).val("")
   }
 })
